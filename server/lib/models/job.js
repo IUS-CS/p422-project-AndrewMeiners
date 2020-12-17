@@ -13,6 +13,6 @@ JobSchema.query.byName = function(name) {
   return this.where({section: name});
 }
 
-const JobSchema = mongoose.model('Job', JobSchema);
+const Job = mongoose.model('Job', JobSchema);
 
-module.exports = JobSchema;
+module.exports = Job;

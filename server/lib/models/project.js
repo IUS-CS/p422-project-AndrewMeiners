@@ -13,6 +13,6 @@ ProjectSchema.query.byName = function(name) {
   return this.where({name: name});
 }
 
-const ProjectSchema = mongoose.model('Project', ProjectSchema);
+const Project = mongoose.model('Project', ProjectSchema);
 
-module.exports = ProjectSchema;
+module.exports = Project;

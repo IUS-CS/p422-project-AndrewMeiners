@@ -13,6 +13,6 @@ InterestSchema.query.byName = function(name) {
   return this.where({name: name});
 }
 
-const InterestSchema = mongoose.model('Interest', InterestSchema);
+const Interest = mongoose.model('Interest', InterestSchema);
 
-module.exports = InterestSchema;
+module.exports = Interest;
