@@ -9,12 +9,8 @@ const JobSchema = mongoose.Schema({
   dateEmployeed: String
 });
 
-JobSchema.query.bySection = function(name) {
+JobSchema.query.byName = function(name) {
   return this.where({section: name});
-}
-
-JobSchema.query.bySectionAndName = function(section, name) {
-  return this.where({section: section, name: name});
 }
 
 const JobSchema = mongoose.model('Job', JobSchema);
